@@ -1,0 +1,65 @@
+/* Table Reset: Remove when you blow away tabley */
+table,
+.chng table,
+.ui-dialog-content table {
+  margin: 0px 0px 10px 0px;
+  padding: 0px;
+
+  width: 100%;
+  border: 1px solid rgba(139, 139, 139, 1);
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+table th,
+table td,
+.chng table th,
+.chng table td,
+.ui-dialog-content table th,
+.ui-dialog-content table td {
+  margin: 0px;
+  padding: 5px;
+
+  line-height: 1.5em;
+  border: 1px solid rgba(139, 139, 139, 1);
+}
+
+table th,
+.chng table th,
+.ui-dialog-content table th {
+  font-weight: bold;
+  color: white;
+  background: rgba(73, 73, 73, 1);
+  text-align: left;
+  font-size: 11px;
+}
+
+table th.sortable,
+.chng table th.sortable,
+.ui-dialog-content table th.sortable {
+  background-image: url(../images/bg_white.gif);
+  background-position: 100% 50%;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  padding-right:18px;
+}
+
+table th.sortable.headerSortDown,
+.chng table th.sortable.headerSortDown,
+.ui-dialog-content table th.sortable.headerSortDown {
+  background-image: url(../images/desc_white.gif);
+}
+
+table th.sortable.headerSortUp,
+.chng table th.sortable.headerSortUp,
+.ui-dialog-content table th.sortable.headerSortUp {
+  background-image: url(../images/asc_white.gif);
+}
+
+.chng table td a { border-bottom: none; }
+
+table tr:nth-child(odd),
+.chng table tr:nth-child(odd),
+.ui-dialog-content table tr:nth-child(odd) {
+  background: #f4f4f4;
+}

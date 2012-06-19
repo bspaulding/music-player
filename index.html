@@ -1,0 +1,45 @@
+<html>
+<head>
+  <title>MusicPlayer</title>
+  <link rel="stylesheet" type="text/css" href="stylesheets/table_reset.css"/>
+  <link rel="stylesheet" type="text/css" href="stylesheets/main.css"/>
+  <style type="text/css">
+    tr.selected td { font-weight: bold; }
+    /* Ranges */
+    input[type="range"] {
+      -webkit-appearance: none;
+      border: 1px solid #666;
+      -webkit-border-radius: 20px;
+      cursor: pointer;
+    }
+
+    input[type="range"]::-webkit-slider-thumb {
+      -webkit-appearance: none;
+      -webkit-border-radius: 20px;
+      width: 10px;
+      height: 10px;
+      background: #666;
+    }
+  </style>
+  <script type="text/javascript" src="javascripts/jquery-1.6.1.min.js"></script>
+
+  <script type="text/javascript" src="javascripts/music_player.js"></script>
+  <script type="text/javascript" src="javascripts/app_coffee.js"></script>
+
+  <!--<script type="text/javascript" src="javascripts/app.js"></script>-->
+</head>
+<body>
+  <div id="top_panel">
+    <input type="button" id="previous"/> <input type="button" id="play_pause"/> <input type="button" id="next"/><br/>
+    <input type="range" id="progress"/>
+    <label for="volume">Volume:</label><input type="range" min="0" max="1" step="0.01" value="1" id="volume"/><div id="loading_progress" style="display:inline;"></div><br/>
+  </div>
+  <div class="splitview">
+    <div id="sidebar">
+      <div id="playlists"></div>
+      <img id="currentArtwork" width="200px" height="200px"/>
+    </div>
+    <div id="active_playlist"></div>
+  </div>
+</body>
+</html>

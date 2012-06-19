@@ -1,0 +1,56 @@
+html, body { 
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  font-family: Helvetica Neue;
+  font-size: 1em;
+}
+
+#top_panel {
+  display: block;
+  width: 100%;
+  height: 100px;
+
+  background-image: -webkit-linear-gradient(rgb(207, 207, 207), rgb(189, 189, 189), rgb(168, 168, 168));
+  -webkit-box-shadow: 0px 1px 2px rgba(0, 0, 0, 1);
+}
+
+#splitview {
+  float: left;
+  width: 100%;
+  height: 100%;
+}
+
+#sidebar {
+  position: relative;
+  float: left;
+  max-width: 200px;
+  width: 200px;
+}
+
+#sidebar #currentArtwork {
+  float: left;
+  width: 200px;
+  height: 200px;
+}
+
+#active_playlist {
+  float: left;
+  width: 1024px;
+}
+
+/* Buttons */
+input[type="button"] {
+  width: 50px;
+  height: 50px;
+  -webkit-border-radius: 50px;
+  background-image: -webkit-radial-gradient( 50% 30%, circle, rgb(255, 255, 255), rgb(197, 197, 197) );
+  border: 1px solid rgb(131, 131, 131);
+}
+
+input[type="button"]#play_pause {
+  width: 75px;
+  height: 75px;
+}
